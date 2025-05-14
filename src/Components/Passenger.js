@@ -61,8 +61,8 @@ export default function Passenger() {
   // Validation function
   const validate = (values) => {
     const errors = {};
-    const regexName = /^[a-zA-Z]{2,50}$/;
-    const regexSurname = /^[a-zA-Z]{2,50}$/;
+    const regexName = /^[a-zA-Z]{2,50}$/i;
+    const regexSurname = /^[a-zA-Z]{2,50}$/i;
     if (!values.gender) {
       errors.gender = "Gender is required";
     }
